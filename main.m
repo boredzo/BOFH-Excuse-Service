@@ -4,13 +4,14 @@
 
 int main(int argc, char *argv[])
 {
+    int result = EXIT_SUCCESS;
+
     @autoreleasepool {
         BOFHExcuseService * excuseService = [[BOFHExcuseService alloc] init];
         NSRegisterServicesProvider(excuseService, @"BOFHExcuseServicer");
                 
-        [[NSRunLoop currentRunLoop] run];
+        result = NSApplicationMain(argc, (const char **)argv);
     };
     
-    exit(0);
-    return 0;
+    return result;
 }
