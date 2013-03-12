@@ -26,8 +26,8 @@
 	<string>public.app-category.business</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSBGOnly</key>
-	<string>1</string>
+	<key>LSBackgroundOnly</key>
+	<false/>
 	<key>NSHumanReadableCopyright</key>
 	<string>This amplication (c) Steve Ballmer 1998</string>
 	<key>NSServices</key>
