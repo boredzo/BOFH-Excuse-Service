@@ -1,0 +1,2 @@
+
+@interface BOFHExcuseService : NSObject @end

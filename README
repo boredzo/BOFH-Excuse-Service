@@ -1,0 +1,19 @@
+ ____ ____ ____ ____ _________ ____ ____ ____ ____ ____ ____ _________ ____ ____ ____ ____ ____ ____ ____ 
+||B |||O |||F |||H |||       |||E |||x |||c |||u |||s |||e |||       |||S |||e |||r |||v |||i |||c |||e ||
+||__|||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__|||__||
+|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+1. Drop the .service into ~/Library/Services
+2. Run this 1ish liner to rescan services without need for a logout/login:
+
+echo '#import <AppKit/AppKit.h>
+void main(void){ NSUpdateDynamicServices();}'|gcc -framework AppKit -xobjective-c - && ./a.out
+
+3. You need to tick the service in the Services pref pane for it to appear.
+3. Restart any app you want to use the service in.
+
+The data comes from http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl
+
+They have text on the internet now.
+
+I made this with love for @boredzo.
