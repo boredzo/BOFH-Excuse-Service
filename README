@@ -17,7 +17,6 @@
 echo '#import <AppKit/AppKit.h>
 void main(void){ NSUpdateDynamicServices();}'|gcc -framework AppKit -xobjective-c - && ./a.out
 
-3. You need to tick the service in the Services pref pane for it to appear.
 3. Restart any app you want to use the service in.
 
 The data comes from http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl

@@ -51,6 +51,8 @@
 			<array>
 				<string>NSStringPboardType</string>
 			</array>
+			<key>NSRequiredContext</key>
+			<dict/>
 		</dict>
 	</array>
 </dict>
