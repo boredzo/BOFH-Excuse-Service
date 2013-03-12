@@ -12,10 +12,9 @@
 |/__\|/__\|/__\|/__\|/__\|/__\|/__\|
 
 1. Drop the .service into ~/Library/Services
-2. Run this 1ish liner to rescan services without need for a logout/login:
+2. Run pbs to rescan services without need for a logout/login:
 
-echo '#import <AppKit/AppKit.h>
-void main(void){ NSUpdateDynamicServices();}'|gcc -framework AppKit -xobjective-c - && ./a.out
+% /System/Library/CoreServices/pbs
 
 The data comes from http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl
 
