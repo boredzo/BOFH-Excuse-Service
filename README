@@ -11,10 +11,7 @@
 ||__|||__|||__|||__|||__|||__|||__||
 |/__\|/__\|/__\|/__\|/__\|/__\|/__\|
 
-1. Drop the .service into ~/Library/Services
-2. Run pbs to rescan services without need for a logout/login:
-
-% /System/Library/CoreServices/pbs
+Just drop the .service into ~/Library/Services.
 
 The data comes from http://pages.cs.wisc.edu/~ballard/bofh/bofhserver.pl
 
